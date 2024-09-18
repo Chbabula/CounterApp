@@ -10,7 +10,9 @@ const addVal = ()=>{
   setCounter(count+1)
 }
 const remVal=()=>{
-   return setCounter(count-1)
+  if(count > 0){
+     setCounter(count-1)
+  }
 }
   return (
     <div className="mainConatiner">
